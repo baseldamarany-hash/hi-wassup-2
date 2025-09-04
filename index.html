@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Load Tailwind CSS from the CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #A0B9E3; /* A friendly, sky-like blue */
+            color: #1f2937;
+        }
+
+        /* Basic animation for a floating effect */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Main Container -->
+    <div class="max-w-4xl mx-auto py-12 px-6 lg:px-0">
+
+        <!-- Hero Section -->
+        <header class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center mb-12 relative">
+            <!-- Floating cloud emoji -->
+            <div class="absolute top-4 right-4 text-4xl floating">
+                ☁️
+            </div>
+            <div class="absolute bottom-4 left-4 text-4xl floating" style="animation-delay: 1.5s;">
+                ✨
+            </div>
+            
+            <!-- Profile Image -->
+            <div class="mb-6 md:mr-8">
+                <img src="https://i.imgur.com/vHq1Q1J.png" alt="A funny picture of Giyuu Tomioka" class="rounded-full w-40 h-40 object-cover border-4 border-white shadow-md transition-transform duration-300 ease-in-out hover:scale-105">
+            </div>
+            
+            <!-- Hero Text -->
+            <div>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2">Hello, I'm Basel (or Besso)</h1>
+                <p class="text-lg sm:text-xl text-gray-700 font-medium">I'm a certified football fanatic and a professional Roblox conqueror. The only thing I'm not good at is losing. I think.</p>
+            </div>
+        </header>
+
+        ---
+
+        <!-- About Me Section -->
+        <section id="about" class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 text-center">About This Guy</h2>
+            <p class="text-lg text-gray-600 mb-4 text-center">
+                I'm 14 years old and on a mission to be a better football player and a better gamer... but mostly just to have fun. I spend most of my time kicking a ball, building crazy things in Roblox, and convincing my friends that I'm not secretly a robot.
+            </p>
+            <p class="text-lg text-gray-600 text-center">
+                My greatest achievement so far? Clutching a 1v4 in Fortnite when I was 13.
+            </p>
+        </section>
+
+        ---
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 text-center">My Two Main Missions in Life</h2>
+            <div class="grid md:grid-cols-2 gap-8 text-center">
+                <!-- Football -->
+                <div>
+                    <div class="text-6xl mb-4">⚽</div>
+                    <h3 class="text-2xl font-bold mb-2">The Beautiful Game</h3>
+                    <p class="text-gray-600">
+                        The football pitch is my second home. I love the game, the teamwork, and the feeling of scoring a great goal. My goal is to become as good as **Cristiano Ronaldo (CR7)**, but without all the running. Just kidding. Mostly.
+                    </p>
+                </div>
+                <!-- Gaming -->
+                <div>
+                    <div class="text-6xl mb-4">🎮</div>
+                    <h3 class="text-2xl font-bold mb-2">The Virtual Worlds</h3>
+                    <p class="text-gray-600">
+                        When I'm not playing football, I'm probably gaming. My favorite game is **Roblox**, because you can literally build anything. From a theme park to a zombie survival game, if you can dream it, you can probably make it.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        ---
+
+        <!-- Games Section -->
+        <section id="games" class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 text-center">My Game Library</h2>
+            <p class="text-lg text-gray-600 mb-4 text-center">
+                I've pretty much conquered every virtual world I've entered. Here are a few of my favorite battlegrounds:
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-lg text-gray-600 max-w-md mx-auto">
+                <li>**Roblox:** It's more than a game—it's a whole universe of games. I can build, race, and pretty much do anything I want.</li>
+                <li>**Goose Goose Duck:** Because I love a good mystery... and watching my friends get tricked.</li>
+                <li>**Deep Rock Galactic:** For rock and stone, brother! And also for getting absolutely swarmed by alien bugs.</li>
+                <li>**Rocket League:** Where I prove that cars can fly, score goals, and cause a chaotic mess all at the same time.</li>
+                <li>**Brawlhalla:** Because who needs strategy when you can just throw your enemies off the stage?</li>
+                <li>**Demon Slayer (and other anime games):** For when I need to unleash my inner swordsman.</li>
+            </ul>
+        </section>
+
+        ---
+
+    </div>
+
+</body>
+</html>
